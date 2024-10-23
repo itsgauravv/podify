@@ -1,7 +1,6 @@
 "use client";
 
 import PodcastCard from "@/components/PodcastCard";
-import { podcastData } from "@/constants";
 import { api } from "@/convex/_generated/api";
 import { useQuery } from "convex/react";
 import React from "react";
@@ -18,7 +17,7 @@ const Home = () => {
             ({ _id, podcastTitle, imageUrl, podcastDescription }) => (
               <PodcastCard
                 key={_id}
-                imgUrl={imageUrl}
+                imgUrl={imageUrl!}
                 title={podcastTitle}
                 description={podcastDescription}
                 podcastId={_id}
