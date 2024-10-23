@@ -41,6 +41,7 @@ const GenerateThumbnail = ({
       const file = new File([blob], fileName, { type: "image/png" });
 
       const uploaded = await startUpload([file]);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const storageId = (uploaded[0].response as any).storageId;
       console.log("storageId", storageId);
 
@@ -56,6 +57,7 @@ const GenerateThumbnail = ({
       toast({
         title: "Thumbnail generated successfully",
       });
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         title: "Error creating thumbnail!",
@@ -70,6 +72,7 @@ const GenerateThumbnail = ({
       const response = await handleGenerateThumbnail({ prompt: imagePrompt });
       const blob = new Blob([response], { type: "image/png" });
       handleImage(blob, `thumbnail-${uuidv4()}`);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         title: "Error generating thumbnail",
@@ -86,6 +89,7 @@ const GenerateThumbnail = ({
       const file = files[0];
       const blob = await file.arrayBuffer().then((ab) => new Blob([ab]));
       handleImage(blob, file.name);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         title: "Error uploading image!",

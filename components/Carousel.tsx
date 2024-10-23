@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { EmblaOptionsType, EmblaCarouselType } from "embla-carousel";
+import { EmblaCarouselType } from "embla-carousel";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
@@ -34,6 +34,7 @@ const Carousel = ({ fansLikeDetail }: CarouselProps) => {
 
   const slides =
     fansLikeDetail &&
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     fansLikeDetail?.filter((item: any) => item?.totalPodcasts > 0);
 
   if (!slides) return <LoaderSpinner />;

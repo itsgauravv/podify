@@ -79,7 +79,7 @@ const CreatePodcast = () => {
         setIsSubmitting(false);
         throw new Error("Please generate audio and image");
       }
-      const podcast = await createPodcast({
+      await createPodcast({
         podcastTitle: data.podcastTitle,
         podcastDescription: data.podcastDescription,
         audioUrl,
@@ -95,6 +95,7 @@ const CreatePodcast = () => {
       toast({ title: "Podcast Created" });
       setIsSubmitting(false);
       router.push("/");
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast({
         title: "Error while Submitting",
