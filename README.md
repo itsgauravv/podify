@@ -2,8 +2,6 @@
 
 Explore, create, and listen to podcasts powered by cutting-edge AI technologies! Podify offers a revolutionary platform where users can generate podcasts using advanced text-to-audio AI, create custom podcast thumbnails, and enjoy smooth playback experiences—all from one place.
 
-🎥 For those who prefer hands-on learning, check out our detailed video tutorials on YouTube. Follow step-by-step instructions as we guide you through building exciting projects like this one.
-
 ## 📝 Table of Contents
 - 🚀 Introduction
 - 🛠️ Tech Stack
@@ -12,12 +10,11 @@ Explore, create, and listen to podcasts powered by cutting-edge AI technologies!
 - 🧩 Useful Code Snippets
 - 📦 Resources & Assets
 - 🎯 More Information
-- 📺 Full Tutorial
 
 ## 🚀 Introduction
 Podify is an AI-powered platform that simplifies podcast creation and discovery. Users can easily convert text into audio podcasts, customize with multi-voice AI, and generate eye-catching podcast artwork. Whether you’re looking to explore the latest trending podcasts or create your own from scratch, Podify makes it possible.
 
-Need help? Our Discord community with 34k+ active members is always here to assist!
+👉 **Live Demo**: Check out the live platform here: [Podify - Live on Vercel](https://podify-podcasts.vercel.app)
 
 ---
 
