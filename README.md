@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Podify - AI-Driven Podcast Platform
 
-## Getting Started
+Explore, create, and listen to podcasts powered by cutting-edge AI technologies! Podify offers a revolutionary platform where users can generate podcasts using advanced text-to-audio AI, create custom podcast thumbnails, and enjoy smooth playback experiences—all from one place.
 
-First, run the development server:
+🎥 For those who prefer hands-on learning, check out our detailed video tutorials on YouTube. Follow step-by-step instructions as we guide you through building exciting projects like this one.
 
+## 📝 Table of Contents
+- 🚀 Introduction
+- 🛠️ Tech Stack
+- 🌟 Features
+- ⚡ Quick Start Guide
+- 🧩 Useful Code Snippets
+- 📦 Resources & Assets
+- 🎯 More Information
+- 📺 Full Tutorial
+
+## 🚀 Introduction
+Podify is an AI-powered platform that simplifies podcast creation and discovery. Users can easily convert text into audio podcasts, customize with multi-voice AI, and generate eye-catching podcast artwork. Whether you’re looking to explore the latest trending podcasts or create your own from scratch, Podify makes it possible.
+
+Need help? Our Discord community with 34k+ active members is always here to assist!
+
+---
+
+## 🛠️ Tech Stack
+Podify is built with the following technologies:
+- Next.js
+- TypeScript
+- Convex
+- OpenAI
+- Clerk
+- ShadCN
+- Tailwind CSS
+
+---
+
+## 🌟 Features
+- **User Authentication**: A secure and smooth registration and login system.
+- **Curated Homepage**: Displays popular and trending podcasts with a sticky player for uninterrupted listening.
+- **Podcast Discovery**: Dedicated page for browsing and discovering new podcasts.
+- **Advanced Search**: Enables users to find podcasts based on various filters and criteria.
+- **Podcast Creation**: Convert text to audio, generate podcast thumbnails with AI, and preview before publishing.
+- **Multi-Voice AI**: Supports multiple AI-generated voices for a rich podcasting experience.
+- **User Profile**: Manage all your podcasts, with options to edit and delete them.
+- **Podcast Details**: View detailed information such as the creator’s name, listener count, and a full transcript.
+- **Interactive Podcast Player**: Features skip controls, mute/unmute options, and a sleek design for easy navigation.
+- **Mobile-Friendly**: Enjoy Podify’s full functionality on any device with a fully responsive interface.
+
+...and much more, with modular code designed for reusability.
+
+---
+
+## ⚡ Quick Start Guide
+
+### Prerequisites
+Ensure you have the following installed on your machine:
+- Git
+- Node.js
+- npm (Node Package Manager)
+
+### Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/podify.git
+cd podify
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies & Set Up Environment Variables
+```bash
+npm install
+cd podify
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL='/sign-in'
+NEXT_PUBLIC_CLERK_SIGN_UP_URL='/sign-up'
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Start the Development Server
+```bash
+npm run dev
+```
