@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "hushed-giraffe-113.convex.cloud",
       },
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+      },
     ],
   },
 };
